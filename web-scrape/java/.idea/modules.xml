@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/webscrape.project.iml" filepath="$PROJECT_DIR$/.idea/modules/webscrape.project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/webscrape.project_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webscrape.project_main.iml" group="webscrape.project" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webscrape.project_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webscrape.project_test.iml" group="webscrape.project" />
     </modules>
   </component>
 </project>

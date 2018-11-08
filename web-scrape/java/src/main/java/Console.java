@@ -9,10 +9,7 @@ import java.util.Scanner;
 
 public class Console {
 
-    private String url;
     private HTMLParser parser;
-    private MatchesListMerger merger;
-    private FinalFilter filter;
     private NumberFinder finder = new NumberFinder();
     private Elements links;
     private Elements spans;
@@ -27,7 +24,7 @@ public class Console {
     public void insertURL(){
         System.out.println("Welcome, please add the Link to the website to find Telf-numbers");
         Scanner scanner = new Scanner(System.in);
-        url = scanner.nextLine();
+        String url = scanner.nextLine();
         parser = new HTMLParser(url);
     }
 
@@ -71,15 +68,14 @@ public class Console {
     }
 
     public List<String> mergeMatchesLists(){
-        merger = new MatchesListMerger(posibleMatches);
+        MatchesListMerger merger = new MatchesListMerger(posibleMatches);
         List<String> mergedList = merger.merge();
-        List<String> finalList = merger.removeDuplicates(mergedList);
 
-        return finalList;
+        return merger.removeDuplicates(mergedList);
     }
 
     public List<String> finalFilter(List<String> finalPosibleList){
-        filter = new FinalFilter(finalPosibleList);
+        FinalFilter filter = new FinalFilter(finalPosibleList);
         List<String> finalFilter = filter.subFilter();
 
         return finalFilter;
