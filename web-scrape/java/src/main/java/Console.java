@@ -76,9 +76,8 @@ public class Console {
 
     public List<String> finalFilter(List<String> finalPosibleList){
         FinalFilter filter = new FinalFilter(finalPosibleList);
-        List<String> finalFilter = filter.subFilter();
 
-        return finalFilter;
+        return filter.subFilter();
     }
 
 
