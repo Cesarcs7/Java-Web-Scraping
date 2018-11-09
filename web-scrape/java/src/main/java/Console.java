@@ -42,7 +42,7 @@ public class Console {
         h4s = parser.getAllH4Elements();
     }
 
-    //Shows how the program look for phone numbers in every type of tags from the HTML
+    //Shows how the program look for phone numbers in every type of tags from the HTML where it could be
     public void createPosibleMatchesLists(){
         System.out.println("Links=========================================================");
         List<String> linkmat = finder.findNumberInElementsList(links);

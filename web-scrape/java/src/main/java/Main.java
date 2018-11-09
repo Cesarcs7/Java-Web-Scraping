@@ -23,7 +23,7 @@ public class Main {
 
 private static void print(List<String> finalList){
     for (String element: finalList) {
-        System.out.printf("Phone Number: "+element);
+        System.out.println("Phone Number: "+element);
     }
 }
 
