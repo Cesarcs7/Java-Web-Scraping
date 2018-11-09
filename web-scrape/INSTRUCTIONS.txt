@@ -1,8 +1,0 @@
-INSTRUCTIONS
-
-to run first clone the git repository
-
-1 - go to the \web-scrape\java directory
-2 - run "$ gradle fatJar" command, this will build the program and create a JAR file
-3 - go to \web-scrape\java\build\libs
-4-  run: $ java -jar webscrape.project-all-1.0-SNAPSHOT.jar
