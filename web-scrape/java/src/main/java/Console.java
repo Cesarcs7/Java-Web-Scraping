@@ -33,13 +33,13 @@ public class Console {
     }
 
     public void analyzeAllTags(){
-        links = parser.getAllLinkElements();
-        spans = parser.getAllSpanElements();
-        pTags = parser.getAllPElements();
-        h1s = parser.getAllH1Elements();
-        h2s = parser.getAllH2Elements();
-        h3s = parser.getAllH3Elements();
-        h4s = parser.getAllH4Elements();
+        links = parser.getElements("a");
+        spans = parser.getElements("span");
+        pTags = parser.getElements("p");
+        h1s = parser.getElements("h1");
+        h2s = parser.getElements("h2");
+        h3s = parser.getElements("h3");
+        h4s = parser.getElements("h4");
     }
 
     //Shows how the program look for phone numbers in every type of tags from the HTML where it could be
